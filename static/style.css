@@ -1,0 +1,81 @@
+body {
+    background-color: #E6E6FA; /* lavender */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    background: #F8F0FF;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(150, 123, 182, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #6A0DAD; /* dark purple */
+    margin-bottom: 20px;
+}
+
+/* Flower decorations */
+.container::before {
+    content: "🌸💜🌺";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 24px;
+}
+
+.container::after {
+    content: "🌸🌷💜";
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    font-size: 24px;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#feeling {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #CFA0E0;
+    width: calc(100% - 22px);
+}
+
+button {
+    padding: 10px;
+    background-color: #D8BFD8; /* thistle */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#chat-log {
+    min-height: 80px;
+    border: 1px solid #CFA0E0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #FDF6FF;
+    overflow-y: auto;
+}
+
+.reminder {
+    margin-top: 15px;
+    font-style: italic;
+    color: #8A2BE2; /* violet */
+}
